@@ -22,24 +22,6 @@ border-radius: 50px;
 align:center;
 text-align:center
 }
-button {  
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/normal.cur), auto;
-}
-body {  
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/normal.cur), auto;
-}
- 
- 
-a {
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/ayuda.cur), auto
-}
- 
-a:active {
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/work.cur), alias
-}
-p {
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/texto.cur), auto
-}
 div.art{
   background-color: #FFFFFF;
   width:600px;
@@ -49,7 +31,7 @@ div.art{
   text-align:center;
 }
 div.art:hover{
-  box-shadow:5px 5px 5px  #000;
+  box-shadow:5px 5px 5px  #FFF;
 }
 span {
    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur), auto;
@@ -730,7 +712,12 @@ footer {
   --code-color: #ec71b7;
 }
 
-footer{
-color:grey;
-text-align:center;
+p{
+color:white;
 }
+
+footer{
+	color:white;
+	text-align:center;
+}
+

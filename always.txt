@@ -1,4 +1,4 @@
-/****导入CSS****/
+﻿/****导入CSS****/
 
 <link rel="stylesheet" type="text/css" href="main.css" >
 
@@ -52,3 +52,13 @@
             "opacityOnHover": 0.2
         }
     });</script>
+
+/****footer****/
+
+<footer><small><center>
+    made by <a href="typora.io">typora</a>
+    <br>
+	design by <a href="https://www.luogu.com.cn/user/394886">baoxuanming</a>
+	<br>
+	theme by <a href="https://theme.typora.io/theme/Purple/">Purple</a>
+<center></small></footer>
