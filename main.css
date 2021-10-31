@@ -734,3 +734,7 @@ footer{
 color:grey;
 text-align:center;
 }
+
+html{
+  background-color: rgb(255, 245, 225);
+}

@@ -721,3 +721,6 @@ footer{
 	text-align:center;
 }
 
+html{
+  background-color: rgb(0, 0, 0);
+}
