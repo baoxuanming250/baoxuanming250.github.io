@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="main.css" >
+</br>
+<a href="index.html"><button>返回主页</button></a>
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+
+<script>
+    L2Dwidget.init({        "model": {  
+    //jsonpath控制显示那个小萝莉模型，下面这个就是我觉得最可爱的小萝莉模型，替换时后面名字也要替换掉
+    jsonPath: "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",        
+
+           "scale": 1
+        },     
+          "display": {      
+            "position": "right", //看板娘的表现位置
+            "width": 150,  //小萝莉的宽度
+            "height": 300, //小萝莉的高度
+            "hOffset": 0,     
+
+            "vOffset": -20
+        },       
+
+           "mobile": {        
+
+           "show": true,
+
+           "scale": 0.5
+        },
+
+        "react": {
+
+            "opacityDefault": 0.7,
+
+            "opacityOnHover": 0.2
+        }
+    });</script>
+
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<title>洛谷题解-CF21A</title>
+</head>
+<body class='typora-export os-windows' style="background-color: black;"><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='洛谷题解-cf21a'><span>洛谷题解-CF21A</span></h1><p><span>不得不说，这题是真神。看起来是一个模拟轻松过的题，却怎么也过不了。相信很多同志做这题的过程是坎坷的。</span></p><hr /><h3 id='分析'><span>分析</span></h3><p><span>这题其实就是暴力模拟,根据</span><code>&lt;username&gt;@&lt;hostname&gt;[/resource]</code><span>分开</span><code>&lt;username&gt;</code><span>、</span><code>&lt;hostname&gt;</code><span>和</span><code>[/resource]</code><span>。</span></p><p><span>来个“栗”子:</span></p><p><code>mike@codeforces.com\happy</code></p><p><span>分成</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="txt"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="txt"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 14.5px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style="text-rendering: auto;"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mike  @  codeforces.com  \happy</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> ↑<span class="cm-tab" role="presentation" cm-text="	">  </span>  <span class="cm-tab" role="presentation" cm-text="	">  </span> &nbsp; &nbsp; &nbsp;  ↑<span class="cm-tab" role="presentation" cm-text="	">   </span> &nbsp; &nbsp; &nbsp;  ↑</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">username &nbsp;  hostname &nbsp;  /resource &nbsp;</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 75px;"></div><div class="CodeMirror-gutters" style="display: none; height: 75px;"></div></div></div></pre><p><span>之后再分别判断即可。</span></p><hr /><h3 id='思路'><span>思路</span></h3><p><span>先说一下总体思路：将</span><code>&lt;username&gt;</code><span>、</span><code>&lt;hostname&gt;</code><span>、</span><code>[/resource]</code><span>分开，分别判断。</span></p><p><span>但是，如果你根据这个思路敲代码，是过不了的。</span></p><p><span>正在怀疑</span><del><span>思路</span></del><span>人生时，本xxs意识到这是CF的题，是可以HACK的！毕竟，群众HACK的力量是伟大的！</span></p><p><span>于是，我整理了几个大坑点：</span></p><ol start='' ><li><code>&lt;username&gt;</code><span>和</span><code>&lt;hostname&gt;</code><span>不可少；</span></li><li><code>@</code><span> </span><code>.</code><span> </span><code>/</code><span>不算入长度内；</span></li><li><code>[/resource]</code><span>的结束不能是/!!!(一直死在这上面）</span></li></ol><hr/><footer><small><center>
+    made by <a href="typora.io">typora</a>
+    <br>
+	design by <a href="https://www.luogu.com.cn/user/394886">baoxuanming</a>
+	<br>
+	theme by <a href="https://theme.typora.io/theme/Purple/">Purple</a>
+<center></small></footer></center><p>&nbsp;</p></div></div>
+</body>
+</html>
