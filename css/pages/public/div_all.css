@@ -1,0 +1,9 @@
+div.all{
+    float:right;
+    width:calc(100vw - 430px);
+    transform:translate(25px,-8px);
+}
+div.all a{
+    color:rgba(31, 30, 30, 0.836);
+    text-decoration: none;
+}

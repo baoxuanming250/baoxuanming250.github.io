@@ -1,0 +1,26 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+html{
+    overflow-x: hidden;
+    background-color: #cef2fa;
+}
+@keyframes get_in{
+    100%{
+        opacity: 1;
+    }
+}
+body{
+    margin:0;
+    padding:0;
+    opacity: 0;
+    animation: get_in 1s;
+    opacity: 1;
+}
+@import url('https://fonts.font.im/css?family=Oleo+Script:700');
+@font-face {
+    font-family: feiyang;
+    src: url(../../font-family/feiyang.ttf);
+}
+@font-face {
+    font-family: kaiti;
+    src: url(../../font-family/kaiti.ttf);
+}

@@ -1,0 +1,137 @@
+/*article_left*/
+div.article_left{
+    width: 600px;
+    height:350px;
+    background-color: #becfaa;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 25px;
+    margin: 100px auto 100px auto;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+div.article_left .img{
+    height: 350px;
+    width: 300px;
+    border-radius: 25px 0 0 25px;
+}
+div.article_left .img img{
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 25px 0 0 25px;
+}
+div.article_left:hover{
+    transform: translateY(-3px);
+    box-shadow:
+    0px 3.6px 2.2px rgba(0, 0, 0, 0.014),
+    0px 8.6px 5.3px rgba(0, 0, 0, 0.025),
+    0px 16.3px 10px rgba(0, 0, 0, 0.034),
+    0px 29px 17.9px rgba(0, 0, 0, 0.041),
+    0px 54.3px 33.4px rgba(0, 0, 0, 0.049),
+    0px 130px 80px rgba(0, 0, 0, 0.07)
+    ;
+
+}
+div.article_left div.letter p.name{
+    text-align: center;
+    font-size: 2em;
+}
+div.article_left div.letter p{
+    font-weight: bolder;
+}
+div.article_left div.letter{
+    height: 350px;
+    width: 300px;
+    border-radius:  0 25px 25px 0;
+    transform: translate(300px,-350px);
+}
+div.article_left div.letter div.divin{
+    margin: 10px 20px;
+}
+div.article_left div.letter div.divin div.information{
+    color:gray;
+    font-size: 0.9em;
+}
+div.article_left div.letter div.divin div.information i{
+    font-size: 1.2em;
+}
+div.article_left div.letter div.divin div.information div{
+    display: inline-block;
+    transform: translateY(-1px);
+    margin: 5px 5px 5px 3px;
+    word-break: break-all;
+}
+/*article_left*/
+
+/*article_right*/
+div.article_right{
+    width: 600px;
+    height:350px;
+    background-color: #becfaa;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0px;
+    margin: 100px auto 100px auto;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+div.article_right .img{
+    height: 350px;
+    width: 300px;
+    border-radius: 0 25px 25px 0;
+    transform: translate(300px,-350px);
+}
+div.article_right .img img{
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+    border-radius:  0 25px 25px 0;
+}
+div.article_right:hover{
+    transform: translateY(-3px);
+    box-shadow:
+    0px 3.6px 2.2px rgba(0, 0, 0, 0.014),
+    0px 8.6px 5.3px rgba(0, 0, 0, 0.025),
+    0px 16.3px 10px rgba(0, 0, 0, 0.034),
+    0px 29px 17.9px rgba(0, 0, 0, 0.041),
+    0px 54.3px 33.4px rgba(0, 0, 0, 0.049),
+    0px 130px 80px rgba(0, 0, 0, 0.07)
+    ;
+}
+div.article_right div.letter p.name{
+    text-align: center;
+    font-size: 2em;
+}
+div.article_right div.letter p{
+    font-weight: bolder;
+}
+div.article_right div.letter{
+    height: 350px;
+    width: 300px;
+    border-radius: 25px 0 0 25px;
+}
+div.article_right div.letter div.divin{
+    margin: 10px 20px;
+    transform: translateY(28px);
+}
+div.article_right div.letter div.divin p.article_discribe{
+    margin: 0 0 40px 0;
+    line-height: 1.5em;
+}
+div.article_right div.letter div.divin div.information{
+    color:gray;
+    font-size: 0.9em;
+}
+div.article_right div.letter div.divin div.information i{
+    font-size: 1.2em;
+}
+div.article_right div.letter div.divin div.information div{
+    display: inline-block;
+    transform: translateY(-1px);
+    margin: 5px 5px 5px 3px;
+    word-break: break-all;
+}
+/*article_right*/

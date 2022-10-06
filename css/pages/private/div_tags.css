@@ -1,0 +1,30 @@
+div.tags{
+    margin:50px auto;
+    width:650px;
+    border-left: #50b9d1 10px solid;
+}
+h1.describe{
+    color:#50b9d1;
+    margin:30px 20px 15px;
+    border-bottom: #50b9d1 3px solid;
+    font-size: 1.5rem;
+}
+p.tags{
+    color:rgb(92, 91, 91);
+    margin: 30px;
+}
+p.tags ul li{
+    font-size: 100px;
+    list-style-type:circle;
+    letter-spacing: 0.2em;
+    line-height: 30px;
+}
+a.tags{
+    color:#50b9d1 !important;
+    border-bottom: #50b9d1 2px dotted;
+    transition: 1s;
+    display: inline-block;
+}
+a.tags:hover{
+    transform: translateY(-2px);
+}

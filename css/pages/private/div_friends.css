@@ -1,0 +1,76 @@
+h1.friend{
+    margin:40px 0 10px 0;
+    font-size: 4.5em;
+    color: #086972;
+    text-align: center;
+    font-family: kaiti;
+}
+hr.friend{
+    max-width:250px;
+    border: 2px solid #086972;
+}
+div.inall {
+    margin:50px 40px 0 40px;
+}
+div.aline{
+    margin:0px auto;
+    width: max-content;
+}
+div.friend{
+    width: 250px;
+    height: 370px;
+    border-radius: 50px;
+    background: #cef2fa;
+    box-shadow:  20px 20px 60px #afced5,
+                -20px -20px 60px #edffff;
+    text-align: center;
+    margin: 20px 30px;
+    display: inline-block;
+}
+div.infriend{
+    margin:0 20px;
+}
+div.friend img{
+    border-radius: 50px;
+    width:90px;
+    height:90px;
+    margin:40px 40px 0 40px;
+}
+div.friend p.name{
+    font-weight: bold;
+    font-size: 1.3em;
+    letter-spacing: 0.15em;
+    color:rgb(43, 144, 207);
+    margin:20px 0;
+}
+div.friend p.discribe{
+    color:gray;
+    font-size: 0.9em;
+    font-style: italic;
+    letter-spacing: 0.7em;
+}
+.aline #last,.aline #first{
+    transform: translateY(20px);
+}
+div.botton{
+    margin:25px auto;
+    width: max-content;
+}
+a.botton{
+    text-decoration: none;
+    display: inline-block;
+    width:80px;
+    height: 50px;
+    color:rgb(87, 85, 85);
+    border-radius: 50px;
+    background: linear-gradient(145deg, #b9dae1, #dcffff);
+    box-shadow:  20px 20px 60px #afced5,
+                -20px -20px 60px #edffff;
+    line-height: 50px;
+    transition: 0.8s;
+    font-family: "kaiti";
+    font-weight: bold;
+}
+a.botton:hover{
+    transform: translateY(-5px);
+}
