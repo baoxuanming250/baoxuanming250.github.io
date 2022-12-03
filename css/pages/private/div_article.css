@@ -135,3 +135,7 @@ div.article_right div.letter div.divin div.information div{
     word-break: break-all;
 }
 /*article_right*/
+
+p.article_discribe{
+    word-break: break-all;
+}
