@@ -2,7 +2,7 @@
 html{
     overflow-x: hidden;
     background-color: #cef2fa;
-    filter: grayscale(0.65);
+    filter: grayscale(0.85);
 }
 @keyframes get_in{
     100%{
